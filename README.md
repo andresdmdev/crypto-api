@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Binance API
+
+Cryptocurrency
+
+## It has the ticker symbol with the UDST pair
+
+## It shows all cryptos with a price below 1 USDT on Binance
+
+## It reloads the status every 5 seconds
+>>>>>>> 38edbf8cdc0c714d9f3a7086df915720d96d6f53

@@ -1,4 +1,4 @@
-# Binance API
+# Binance API with React.js
 
 Cryptocurrency
 

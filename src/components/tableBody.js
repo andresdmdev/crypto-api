@@ -3,13 +3,13 @@ import Coins from "./coins";
 
 const TableBody = () => {
 
-    const [coins, setCoins] = useState([])
+    const [coins, setCoins] = useState([]);
 
     const getData = async () => {
         const data = await fetch('https://api.binance.com/api/v3/ticker/price')
         const user = await data.json()
         setCoins(user)
-    }
+    };
 
     useEffect(() => {
         
@@ -17,7 +17,7 @@ const TableBody = () => {
             getData()
         }, 5000);
         
-    },[])
+    },[]);
 
     return(
         <tbody>

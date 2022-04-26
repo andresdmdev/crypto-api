@@ -49,3 +49,11 @@ table th, td{
 table tbody tr:nth-of-type(even){
   background-color: #f3c32669;
 }
+
+/*-----------Media Movil -------------*/
+
+@media screen and (max-width: 500px){
+  table{
+    width: 85%;
+  }
+}

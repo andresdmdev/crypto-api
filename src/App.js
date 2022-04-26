@@ -1,12 +1,12 @@
 import './App.css';
 import TableBody from './components/tableBody';
-import React, { useState } from "react";
+import React from "react";
 
 function App() {
   
   return (
     <div className="App">
-      <h1>Cryptop Quotation</h1>
+      <h1>Crypto Quotation</h1>
       <table>
         <thead>
           <tr>

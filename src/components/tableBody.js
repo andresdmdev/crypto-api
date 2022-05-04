@@ -1,23 +1,30 @@
 import React, { useEffect, useState } from "react";
 import Coins from "./coins";
+import binance from "../api/api-binance";
 
 const TableBody = () => {
 
     const [coins, setCoins] = useState([]);
 
-    const getData = async () => {
-        const data = await fetch('https://api.binance.com/api/v3/ticker/price')
-        const user = await data.json()
-        setCoins(user)
+    const [error, setError] = useState(null);
+
+    async function getData(){
+        
+        const response = await binance.get('')
+            .catch(error => {setError(error); console.log(error)});
+        
+        setCoins(response.data);
     };
 
     useEffect(() => {
         
         setInterval(() => {
-            getData()
+           getData();
         }, 5000);
         
     },[]);
+
+    if(error) return `Error: ${error.message}`;
 
     return(
         <tbody>

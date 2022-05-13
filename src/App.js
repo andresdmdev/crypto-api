@@ -1,5 +1,5 @@
 import './App.css';
-import TableBody from './components/tableBody';
+import TableBody from './features/table/TableBody';
 import React from "react";
 
 function App() {

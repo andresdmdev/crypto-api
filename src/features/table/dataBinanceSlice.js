@@ -16,7 +16,7 @@ export const fetchCoins = createAsyncThunk('binance/fetchCoins', async () => {
   } catch (error) {
     return error.message;
   }
-})
+});
 
 const binanceSlice = createSlice({
   name: 'binance-api',
@@ -33,12 +33,10 @@ const binanceSlice = createSlice({
       })
       .addCase(fetchCoins.fulfilled, (state, action) => {
         state.status = 'succeeded'
-
-        const add = action.payload.map(x => (
-          state.coins.push(x)
+        const add = action.payload.filter(x => (
+          state.coins = state.coins !== x
         ))
-
-        state.coins = state.coins.concat(add)
+        state.coins = add
       })
       .addCase(fetchCoins.rejected, (state, action) => {
         state.status = 'error'

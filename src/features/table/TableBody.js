@@ -15,7 +15,7 @@ const TableBody = () => {
         if(status === 'idle'){
             dispatch(fetchCoins());
         }
-    }, [status, dispatch])
+    }, [])
 
     let tableCoins;
 

@@ -1,7 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
-
-const URL_COINS = 'https://api.binance.com/api/v3/ticker/price';
+import binance from '../../api/apiBinance';
 
 const initialState = {
   coins: [],
@@ -11,7 +9,7 @@ const initialState = {
 
 export const fetchCoins = createAsyncThunk('binance/fetchCoins', async () => {
   try {
-    const response = await axios.get(URL_COINS);
+    const response = await binance.get('');
     return [...response.data];
   } catch (error) {
     return error.message;

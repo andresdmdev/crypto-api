@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import binanceReducer from '../features/table/dataBinanceSlice';
+import cryptoReducer from '../features/table/dataCryptoSlice';
 
 export const store = configureStore({
   reducer: {
-    binance: binanceReducer,
+    crypto: cryptoReducer,
   }
 });

@@ -7,11 +7,10 @@ const initialState = {
   error: null
 };
 
-
 export const fetchCoins = createAsyncThunk('crypto/fetchCoins', async () => {
   try {
-    const response = await cryptoApi.get('');
-    return [...response.data];
+    const reponse = await cryptoApi.get('');
+    return [...reponse.data];
   } catch (error) {
     return error.message;
   }
@@ -32,14 +31,11 @@ const cryptoSlice = createSlice({
       })
       .addCase(fetchCoins.fulfilled, (state, action) => {
         state.status = 'succeeded'
-        const add = action.payload.filter(x => (
-          state.coins = state.coins !== x
-        ))
-        state.coins = add;
+        state.coins = action.payload;
         console.log(state.coins);
       })
       .addCase(fetchCoins.rejected, (state, action) => {
-        state.status = 'error'
+        state.status = 'failed'
         state.error = action.error.message
       })
   }

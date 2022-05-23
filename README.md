@@ -1,9 +1,16 @@
 # Binance API with React.js
 
-Cryptocurrency
+This app shows a list of cryptocurrencies pairs(USDT) from Binance platform with its actual market price. When It does a request to the Binance API, it sorts data from highest to lowest price, with a sort method. Besides, It calls each element of the array, with a map method, mounting every component with its props. Then, It evaluates, with RegExp, every component with pair USDT and higher than 1 USDT, to represent a row in the list and show the result.
 
-## It has the ticker symbol with the UDST pair
+## Stack used for this project
 
-## It shows all cryptos with a price below 1 USDT on Binance
+### Node.js and NPM for JavaScript runtime environment and package management.
 
-## It reloads the status every 5 seconds
+### React.js as a Front-End library to build interactive user interfaces. I used state Hooks to store data from the api and handle conection errors.
+
+### Axios library to handle asynchronous REST API requests using useEffect Hook.
+
+### CSS3 for styling and HTML5 for the layout.
+
+
+### [DEMO](https://andres-webdev.github.io/binance-api/)

@@ -3,57 +3,6 @@
 }
 
 body{
-  background-color: #f0f0f0;
-  width: 98%;
+  width: 100%;
   height: 98%;
-}
-
-h1{
-  text-align: center;
-}
-
-table{
-  margin-left: auto;
-  margin-right: auto;
-  width: 450px;
-  box-shadow: 0 0 30px #a39e9e;
-  border-collapse: collapse;
-  border-radius: 20px;
-}
-
-th:first-child { 
-  border-top-left-radius: 15px; 
-}
-th:last-child {   
-  border-top-right-radius: 15px; 
-}
-tr:last-child td:first-child { 
-  border-bottom-left-radius: 15px; 
-}
-tr:last-child td:last-child { 
-  border-bottom-right-radius: 15px; 
-}
-
-table thead{
-  background-color: #f0b90b;
-  color: #252a34;
-  font-weight: 900;
-  font-size: 20px;
-}
-
-table th, td{
-  padding: 20px 20px;
-  text-align: center;
-}
-
-table tbody tr:nth-of-type(even){
-  background-color: #f3c32669;
-}
-
-/*-----------Media Movil -------------*/
-
-@media screen and (max-width: 500px){
-  table{
-    width: 85%;
-  }
 }

@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import binance from '../../api/apiBinance';
+import cryptoApi from '../../api/api';
 
 const initialState = {
   coins: [],
@@ -7,17 +7,17 @@ const initialState = {
   error: null
 };
 
-export const fetchCoins = createAsyncThunk('binance/fetchCoins', async () => {
+export const fetchCoins = createAsyncThunk('crypto/fetchCoins', async () => {
   try {
-    const response = await binance.get('');
-    return [...response.data];
+    const reponse = await cryptoApi.get('');
+    return [...reponse.data];
   } catch (error) {
     return error.message;
   }
 });
 
-const binanceSlice = createSlice({
-  name: 'binance-api',
+const cryptoSlice = createSlice({
+  name: 'crypto-api',
   initialState,
   reducers: {
     /*
@@ -31,20 +31,18 @@ const binanceSlice = createSlice({
       })
       .addCase(fetchCoins.fulfilled, (state, action) => {
         state.status = 'succeeded'
-        const add = action.payload.filter(x => (
-          state.coins = state.coins !== x
-        ))
-        state.coins = add
+        state.coins = action.payload;
+        console.log(state.coins);
       })
       .addCase(fetchCoins.rejected, (state, action) => {
-        state.status = 'error'
+        state.status = 'failed'
         state.error = action.error.message
       })
   }
 });
 
-export const selectAllCoins = (state) => state.binance.coins;
-export const getStatus = (state) => state.binance.status;
-export const getError = (state) => state.binance.error;
+export const selectAllCoins = (state) => state.crypto.coins;
+export const getStatus = (state) => state.crypto.status;
+export const getError = (state) => state.crypto.error;
 
-export default binanceSlice.reducer;
+export default cryptoSlice.reducer;

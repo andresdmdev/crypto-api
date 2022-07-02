@@ -22,7 +22,7 @@ const TableBody = () => {
         tableCoins = <tr><td colSpan='7'><div className="d-flex justify-content-center w-100 p-3"><div className="spinner-border" role="status"><span className="visually-hidden">...</span></div><span className="ms-3">Loading</span></div></td></tr>;
     } else if(status === 'succeeded'){
         tableCoins = coins.map(x => (
-            <Coins key={x.rank} coins={x} />
+            <Coins key={x.market_cap_rank} coins={x} />
         ));
     } else if(status === 'error'){
         tableCoins = <tr><td colSpan='4'>{error}</td><td colSpan='3'>Reload</td></tr>;

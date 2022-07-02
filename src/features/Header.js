@@ -1,6 +1,6 @@
 import React from "react";
 import './styleHeader.css'
-import { RiCoinsFill } from 'react-icons/ri';
+import {RiCoinsFill} from "react-icons/ri";
 
 function Header(){
   return (

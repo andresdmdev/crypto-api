@@ -17,8 +17,8 @@ function App() {
                 <th scope="col" className='text-end fs-6 fw-bolder'>Price</th>
                 <th scope="col" className='text-end fs-6 fw-bolder'>Market Cap.</th>
                 <th scope="col" className='text-center fs-6 fw-bolder'>Supply</th>
+                <th scope="col" className='text-center fs-6 fw-bolder'>All Time Low</th>
                 <th scope="col" className='text-center fs-6 fw-bolder'>All Time High</th>
-                <th scope="col" className='text-center fs-6 fw-bolder'>Dominance</th>
             </tr>
         </thead>
         <TableBody />

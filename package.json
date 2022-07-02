@@ -1,6 +1,6 @@
 {
-  "homepage": "https://andres-webdev.github.io/binance-api",
-  "name": "binance-coins",
+  "homepage": "https://andres-webdev.github.io/crypto-api/",
+  "name": "crypto-coins",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

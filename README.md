@@ -1,6 +1,6 @@
 # Cryptocurrency API with React.js
 
-This app shows a list of cryptocurrencies pairs(USDT) from CoinGecko platform with its actual market price. When It does a request to the CoinGecko API, it sorts data from highest to lowest price, with a sort method. Besides, It calls each element of the array, with a map method, mounting every component with its props. Then, It evaluates, with RegExp, every component with pair USDT and higher than 1 USDT, to represent a row in the list and show the result.
+This app shows a list of cryptocurrencies from CoinGecko platform with its actual market price. When It does a request to the CoinGecko API, it sorts data from highest to lowest price, with a sort method. Besides, It calls each element of the array, with a map method, mounting every component with its props. Then, It evaluates, with RegExp, every component with pair USDT and higher than 1 USDT, to represent a row in the list and show the result.
 
 ## Stack used for this project
 
@@ -13,4 +13,4 @@ This app shows a list of cryptocurrencies pairs(USDT) from CoinGecko platform wi
 ### CSS3 for styling and HTML5 for the layout.
 
 
-### [DEMO](https://andres-webdev.github.io/binance-api/)
+### [DEMO](https://andres-webdev.github.io/crypto-api/)

@@ -1,8 +1,10 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import cryptoApi from '../../api/api';
+import formatingData from './helpers/formatingData';
 
 const initialState = {
   coins: [],
+  searchCoins: [],
   status: 'idle',
   error: null
 };
@@ -20,9 +22,16 @@ const cryptoSlice = createSlice({
   name: 'crypto-api',
   initialState,
   reducers: {
-    /*
-      Extra features and logic // Logica y funcionalidades extra
-    */
+    searchCoin: (state, action) => {
+     
+      const name = action.payload.toLowerCase()
+
+      if(name){
+        state.searchCoins = state.coins.filter(coin => coin.name.toLowerCase().includes(name))
+      } else{
+        state.searchCoins = []
+      }
+    }
   },
   extraReducers(builder){
     builder
@@ -31,8 +40,8 @@ const cryptoSlice = createSlice({
       })
       .addCase(fetchCoins.fulfilled, (state, action) => {
         state.status = 'succeeded'
-        state.coins = action.payload;
-        console.log(state.coins);
+        console.log(formatingData(action.payload)) // Eliminar
+        state.coins = formatingData(action.payload);
       })
       .addCase(fetchCoins.rejected, (state, action) => {
         state.status = 'failed'
@@ -41,6 +50,8 @@ const cryptoSlice = createSlice({
   }
 });
 
+export const { searchCoin } = cryptoSlice.actions
+export const selectSearchedCoin = (state) => state.crypto.searchCoins
 export const selectAllCoins = (state) => state.crypto.coins;
 export const getStatus = (state) => state.crypto.status;
 export const getError = (state) => state.crypto.error;

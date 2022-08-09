@@ -1,0 +1,38 @@
+.main_presentation {
+  display: flex;
+  flex-direction: row;
+  margin: -40px auto 0 auto;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main_presentation_title {
+  display: flex;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 47px;
+  color: #1e1e1e;
+  margin: -10px 0 10px 0;
+}
+
+.main_presentation_image {
+  display: flex;
+  width: 540px;
+}
+
+.main_presentation_movil {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .main_presentation {
+    display: none;
+  }
+  .main_presentation_movil {
+    display: flex;
+    margin: -20px auto 0 auto;
+    width: 289px;
+  }
+}
+
+/*# sourceMappingURL=stylesPresentation.css.map */

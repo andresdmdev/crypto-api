@@ -1,0 +1,237 @@
+.table_container {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.table {
+  margin: 20px 10px 0 10px;
+  border-spacing: 0px;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.table_head_row {
+  height: 47px;
+}
+
+.table_head_title {
+  font-size: 0.8rem;
+  line-height: 16px;
+  font-weight: 700;
+  color: #1e1e1e;
+  font-family: "Inter", sans-serif;
+  text-align: right;
+  border-top: 1px solid rgba(30, 30, 30, 0.1);
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+  padding: 10px;
+}
+
+.first-column {
+  text-align: center;
+}
+
+.second-column {
+  text-align: left;
+}
+
+.table_tbody_row {
+  height: 85px;
+}
+
+.table_tbody_row:hover {
+  background-color: #ffffff;
+}
+
+.table_tbody_coin {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1e1e1e;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+  text-align: right;
+  padding: 10px;
+}
+
+.table_tbody_coin.first-column {
+  text-align: center;
+}
+
+.green {
+  font-weight: 600;
+  color: #209269;
+}
+
+.red {
+  font-weight: 600;
+  color: #B74927;
+}
+
+.ratio_logo {
+  width: 10px;
+  margin-right: 2px;
+}
+
+.text_coin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.text_coin_logo {
+  width: 30px;
+}
+
+.text_coin_name {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: 600;
+}
+
+.text_coin_symbol {
+  color: #9e9e9e;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+}
+
+.sparkline {
+  width: 160px;
+}
+
+.text_coin_symbol_supply {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 0.85rem;
+  margin-left: 3px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #406485;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 600px) {
+  table {
+    display: table;
+    overflow-x: scroll;
+    border-spacing: 0px;
+  }
+  thead {
+    position: relative;
+    z-index: 120;
+    border-spacing: 0px;
+  }
+  .table {
+    margin: 0;
+  }
+  .table_head_row .sticky {
+    background-color: #EFF2F5;
+  }
+  .table_head_title {
+    font-size: 0.8rem;
+    padding: 20px 5px 5px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 0;
+    vertical-align: middle;
+  }
+  .sticky {
+    left: 0;
+    position: sticky;
+    z-index: 100;
+  }
+  .first-column {
+    text-align: center;
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+  }
+  .second-column {
+    text-align: left;
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    left: 50px;
+  }
+  .table_tbody_row {
+    height: 75px;
+    overflow: hidden;
+  }
+  .table_tbody_row .sticky {
+    background-color: #EFF2F5;
+  }
+  .table_tbody_coin {
+    padding: 5px;
+    position: sticky;
+    z-index: 99;
+  }
+  .table_tbody_coin.sticky {
+    text-align: center;
+    position: sticky;
+    z-index: 100;
+  }
+  .green {
+    font-weight: 600;
+    color: #209269;
+  }
+  .red {
+    font-weight: 600;
+    color: #B74927;
+  }
+  .ratio_logo {
+    width: 12px;
+    margin-right: 2px;
+  }
+  .text_coin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+  .text_coin_logo {
+    width: 30px;
+  }
+  .text_coin_name {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    font-weight: 600;
+  }
+  .text_coin_symbol {
+    color: #9e9e9e;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1rem;
+  }
+  .sparkline {
+    width: 160px;
+  }
+  .text_coin_symbol_supply {
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 0.85rem;
+    margin-left: 3px;
+  }
+}
+
+/*# sourceMappingURL=stylesTable.css.map */

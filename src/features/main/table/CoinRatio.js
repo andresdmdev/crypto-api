@@ -10,7 +10,7 @@ export default function CoinRatio({ ratio }){
 
   return (
     <td 
-     className={`table_tbody_coin ${ratio > 0 ? 'green' : 'red' }`}
+     className={`table_tbody_coin ${ratio > 0 ? 'green' : 'red' } four-column`}
     >
     <img src={logo} alt="logo" className="ratio_logo" />
     {numberWithOutSimbol.toFixed(2)}%

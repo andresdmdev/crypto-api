@@ -22,12 +22,12 @@ const Coins = ({ coin }) => {
                   symbol={coin.symbol} 
                   name={coin.name} 
                 />
-                <td className="table_tbody_coin">${price}</td>
+                <td className="table_tbody_coin third-column">${price}</td>
                 <CoinRatio ratio={coin.price_24h} />
                 <CoinRatio ratio={coin.price_7d} />
-                <td className="table_tbody_coin">${formatNumber(Math.floor(coin.market_cap))}</td>
-                <td className="table_tbody_coin">${formatNumber(Math.floor(coin.volume))}</td>
-                <td className="table_tbody_coin">
+                <td className="table_tbody_coin  six-column">${formatNumber(Math.floor(coin.market_cap))}</td>
+                <td className="table_tbody_coin  seven-column">${formatNumber(Math.floor(coin.volume))}</td>
+                <td className="table_tbody_coin  eigth-column">
                   {formatNumber(Math.floor(coin.supply))}
                   <span className="text_coin_symbol_supply">{coin.symbol.toUpperCase()}</span>
                 </td>

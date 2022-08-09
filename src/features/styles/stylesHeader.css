@@ -82,8 +82,8 @@
   }
   .header_search.movil {
     display: flex;
-    width: 200px;
-    margin: 5px 2rem 2rem 1.7rem;
+    width: 300px;
+    margin: 1rem auto 2rem auto;
   }
   .header_logo_image {
     width: 40px;

@@ -30,8 +30,8 @@
   }
   .main_presentation_movil {
     display: flex;
-    margin: -20px auto 0 auto;
-    width: 289px;
+    margin: -20px auto;
+    width: 280px;
   }
 }
 

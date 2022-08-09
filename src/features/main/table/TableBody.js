@@ -20,7 +20,10 @@ const TableBody = () => {
     let tableCoins;
 
     if(status === 'loading'){
-        tableCoins = <tr><td colSpan='9'>
+
+        const screen = window.innerWidth > 800 ? 9 : 5
+
+        tableCoins = <tr><td colSpan={screen}>
             <div className="loading">
               <span className="loader"></span>
             </div>

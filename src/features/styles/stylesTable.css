@@ -113,6 +113,8 @@
 }
 
 .loader {
+  position: sticky;
+  z-index: 200;
   width: 60px;
   height: 60px;
   border: 5px solid #406485;

@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { getError, getStatus } from "../../services/slices/dataCryptoSlice";
+import { getError, getStatus } from "../../../services/slices/dataCryptoSlice";
 
 export default function Status(){
 

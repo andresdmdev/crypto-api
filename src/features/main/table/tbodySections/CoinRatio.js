@@ -1,6 +1,6 @@
 import React from "react";
-import greenLogo from '../../../img/green.svg'
-import redLogo from '../../../img/red.svg'
+import greenLogo from '../../../../img/green.svg'
+import redLogo from '../../../../img/red.svg'
 
 export default function CoinRatio({ ratio }){
 
@@ -12,8 +12,10 @@ export default function CoinRatio({ ratio }){
     <td 
      className={`table_tbody_coin ${ratio > 0 ? 'green' : 'red' } four-column`}
     >
-    <img src={logo} alt="logo" className="ratio_logo" />
-    {numberWithOutSimbol.toFixed(2)}%
+    <div className="ratio_block">
+      <img src={logo} alt="logo" className="ratio_logo" />
+      {numberWithOutSimbol.toFixed(2)}%
+      </div>
     </td>
   )
 }

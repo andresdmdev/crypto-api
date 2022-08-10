@@ -7,7 +7,7 @@ export default function Sparkline({ data, days }){
 
   return (
     <td className="table_tbody_coin sparkline nine-column">
-      <Sparklines data={data} width={180} height={65}>
+      <Sparklines data={data} width={140} height={40}>
         <SparklinesCurve style={{ strokeWidth: 2, stroke: colorLine, fill: 'none' }} />
       </Sparklines>
     </td>

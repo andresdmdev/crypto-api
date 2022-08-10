@@ -1,16 +1,14 @@
 import React from "react";
-import formatNumber from "../../../helpers/formatNumber";
-import CoinName from "./CoinName";
-import CoinRatio from "./CoinRatio";
-import Sparkline from "./SparkLine";
+import CoinMarketCap from "./tbodySections/CoinMarketCap";
+import CoinName from "./tbodySections/CoinName";
+import CoinPrice from "./tbodySections/CoinPrice";
+import CoinRatio from "./tbodySections/CoinRatio";
+import CoinSupply from "./tbodySections/CoinSupply";
+import CoinVolume from "./tbodySections/CoinVolume";
+import Sparkline from "./tbodySections/SparkLine";
 
 const Coins = ({ coin }) => {
     
-    /* Price */
-    const price = coin.current_price > 0.01 ? 
-    formatNumber(Number(coin.current_price).toFixed(2)) :
-    coin.current_price;
-
     return(
         <>
             <tr className="table_tbody_row">
@@ -21,17 +19,25 @@ const Coins = ({ coin }) => {
                   image={coin.image} 
                   symbol={coin.symbol} 
                   name={coin.name} 
+                  rank={coin.rank}
                 />
-                <td className="table_tbody_coin third-column">${price}</td>
+                <CoinPrice price={coin.current_price} />
                 <CoinRatio ratio={coin.price_24h} />
                 <CoinRatio ratio={coin.price_7d} />
-                <td className="table_tbody_coin  six-column">${formatNumber(Math.floor(coin.market_cap))}</td>
-                <td className="table_tbody_coin  seven-column">${formatNumber(Math.floor(coin.volume))}</td>
-                <td className="table_tbody_coin  eigth-column">
-                  {formatNumber(Math.floor(coin.supply))}
-                  <span className="text_coin_symbol_supply">{coin.symbol.toUpperCase()}</span>
-                </td>
-                <Sparkline data={coin.sparkline} days={coin.price_7d} />
+                <CoinMarketCap marketCap={coin.market_cap} />
+                <CoinVolume 
+                  price={coin.current_price} 
+                  volume={coin.volume} 
+                  ticker={coin.symbol} 
+                />
+                <CoinSupply 
+                  supply={coin.supply} 
+                  symbol={coin.symbol} 
+                />
+                <Sparkline 
+                  data={coin.sparkline} 
+                  days={coin.price_7d} 
+                />
             </tr>
         </>
     );

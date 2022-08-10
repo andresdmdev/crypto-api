@@ -4,15 +4,10 @@ import formatNumberWithOutDecimals from "../../../../helpers/formatNumberWithOut
 
 export default function CoinMarketCap({ marketCap }){
 
-  const screenMovil = window.innerWidth < 800
-
   return (
     <td className="table_tbody_coin  six-column">
-      {
-        screenMovil ?
-        `${calcMarketCapMovil(marketCap)}B` :
-        `$${formatNumberWithOutDecimals(Math.floor(marketCap))}`
-      }
+      <span className="market_cap_movil">{calcMarketCapMovil(marketCap)}B</span>
+      <span className="market_cap">${formatNumberWithOutDecimals(Math.floor(marketCap))}</span>
     </td>
   )
 }

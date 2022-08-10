@@ -40,7 +40,6 @@ const cryptoSlice = createSlice({
       })
       .addCase(fetchCoins.fulfilled, (state, action) => {
         state.status = 'succeeded'
-        console.log(formatingData(action.payload)) // Eliminar
         state.coins = formatingData(action.payload);
       })
       .addCase(fetchCoins.rejected, (state, action) => {

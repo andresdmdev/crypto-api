@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crypto-api/static/css/main.53215f3a.css",
-    "main.js": "/crypto-api/static/js/main.3d36f53b.js",
+    "main.js": "/crypto-api/static/js/main.669c7c48.js",
     "static/media/image.png": "/crypto-api/static/media/image.df413ddab5fcc1c7f32f.png",
     "static/media/image-movil.png": "/crypto-api/static/media/image-movil.4549b66b7846a60c5497.png",
     "static/media/Logo.svg": "/crypto-api/static/media/Logo.cd2d231030ca9b947764e228883122ee.svg",
@@ -10,10 +10,10 @@
     "static/media/red.svg": "/crypto-api/static/media/red.fcceb8cf8bf6da23b499815cae9fccea.svg",
     "static/media/green.svg": "/crypto-api/static/media/green.61edb04a3c39a745fc16af8423aab940.svg",
     "main.53215f3a.css.map": "/crypto-api/static/css/main.53215f3a.css.map",
-    "main.3d36f53b.js.map": "/crypto-api/static/js/main.3d36f53b.js.map"
+    "main.669c7c48.js.map": "/crypto-api/static/js/main.669c7c48.js.map"
   },
   "entrypoints": [
     "static/css/main.53215f3a.css",
-    "static/js/main.3d36f53b.js"
+    "static/js/main.669c7c48.js"
   ]
 }

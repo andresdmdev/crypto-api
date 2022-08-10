@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crypto-api/static/css/main.be4bc2a1.css",
-    "main.js": "/crypto-api/static/js/main.fcd45f33.js",
+    "main.css": "/crypto-api/static/css/main.7b33c967.css",
+    "main.js": "/crypto-api/static/js/main.fc81103d.js",
     "static/media/image.png": "/crypto-api/static/media/image.df413ddab5fcc1c7f32f.png",
     "static/media/image-movil.png": "/crypto-api/static/media/image-movil.4549b66b7846a60c5497.png",
     "static/media/Logo.svg": "/crypto-api/static/media/Logo.cd2d231030ca9b947764e228883122ee.svg",
@@ -9,11 +9,11 @@
     "static/media/searchLogo.svg": "/crypto-api/static/media/searchLogo.db83baa5bf65b61601bd57c8b6debf10.svg",
     "static/media/red.svg": "/crypto-api/static/media/red.fcceb8cf8bf6da23b499815cae9fccea.svg",
     "static/media/green.svg": "/crypto-api/static/media/green.61edb04a3c39a745fc16af8423aab940.svg",
-    "main.be4bc2a1.css.map": "/crypto-api/static/css/main.be4bc2a1.css.map",
-    "main.fcd45f33.js.map": "/crypto-api/static/js/main.fcd45f33.js.map"
+    "main.7b33c967.css.map": "/crypto-api/static/css/main.7b33c967.css.map",
+    "main.fc81103d.js.map": "/crypto-api/static/js/main.fc81103d.js.map"
   },
   "entrypoints": [
-    "static/css/main.be4bc2a1.css",
-    "static/js/main.fcd45f33.js"
+    "static/css/main.7b33c967.css",
+    "static/js/main.fc81103d.js"
   ]
 }

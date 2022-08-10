@@ -16,14 +16,14 @@
 }
 
 .header_logo_image{
-  width: 50px;
+  width: 35px;
 }
 
 .header_logo_name{
   font-family: 'Inter', sans-serif;
   font-weight: 800;
-  font-size: 22px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 23px;
   color: #1E1E1E;
 }
 
@@ -39,7 +39,7 @@
   outline: none;
   position: relative;
   position: absolute;
-  top: 8px;
+  top: 5px;
   left: 10px;
   cursor: pointer;
 }
@@ -50,10 +50,10 @@
 }
 
 .header_search_input{
-  background-color: #F8FAFD;
+  background-color: rgb(239, 242, 245);
   border-radius: 10px;
-  width: 320px;
-  height: 32px;
+  width: 300px;
+  height: 25px;
   outline: none;
   border: none;
   padding: 7px 15px;
@@ -91,11 +91,11 @@
   }
   
   .header_logo_image{
-    width: 40px;
+    width: 30px;
   }
   
   .header_logo_name{
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 1.1rem;
+    line-height: 20px;
   }  
 }

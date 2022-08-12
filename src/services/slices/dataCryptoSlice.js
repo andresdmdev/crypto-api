@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import cryptoApi from '../../api/api';
+import cryptoApi from '../../api/apiCoins';
 import formatingData from './helpers/formatingData';
 
 const initialState = {

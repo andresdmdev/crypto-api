@@ -1,0 +1,246 @@
+.errorMsg {
+  text-align: center;
+  font-size: 1rem;
+  margin: 2px;
+}
+
+.slider_news_container {
+  width: 95%;
+  height: 230px;
+  margin: 10px auto;
+  position: relative;
+  background-color: #FBFCFE;
+}
+
+.carousel_container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+.carousel {
+  display: flex;
+  padding: 0;
+  width: 184%;
+  transition: all 1s ease-in-out;
+}
+
+.carousel:last-child {
+  margin-right: 0px;
+}
+
+.item {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin-right: 24px;
+  color: #1e1e1e;
+}
+
+a:link, a:active, a:visited {
+  text-decoration: none;
+}
+
+.item_img {
+  width: 280px;
+  height: 136px;
+  object-fit: fill;
+  border-radius: 10px;
+  margin: 0 0 14px 0;
+  transition: all 0.4s ease-out;
+}
+
+.item img:hover {
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.item .subtitle, .item .title {
+  margin: 0 0 0 3px;
+  padding: 0;
+  line-height: 18px;
+  font-family: "Inter", sans-serif;
+}
+.item .subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #58667e;
+  margin-bottom: 3px;
+}
+.item .title {
+  font-size: 14px;
+  color: #1e1e1e;
+  width: 260px;
+}
+
+.carousel.move {
+  margin-left: -88%;
+}
+
+.btn_arrow {
+  cursor: pointer;
+  height: 100%;
+  width: 80px;
+  position: absolute;
+  display: none;
+}
+
+.btn_arrow.left {
+  background: linear-gradient(to right, #FFFFFF 0%, transparent 100%);
+  left: 0;
+  display: block;
+}
+
+.btn_arrow.right {
+  background: linear-gradient(to left, #FFFFFF 0%, transparent 100%);
+  right: 0;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 62px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: black;
+  width: 24px;
+  height: 24px;
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+.skeleton {
+  animation: skeletonLoading 0.7s linear infinite alternate;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 10px;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+.skeleton-text.first {
+  width: 40%;
+  margin-bottom: 5px;
+}
+
+.skeleton-text.last {
+  width: 70%;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+}
+
+@keyframes skeletonLoading {
+  0% {
+    background-color: hsl(220deg, 60%, 89%);
+  }
+  100% {
+    background-color: hsl(220deg, 60%, 96%);
+  }
+}
+@media (max-width: 600px) {
+  .slider_news_container {
+    width: 92%;
+    height: 98px;
+    margin: 16px auto 15px auto;
+  }
+  .errorMsg {
+    font-size: 0.8rem;
+  }
+  .carousel_container {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0;
+  }
+  .item {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin-right: 24px;
+    padding: 13px 16px;
+    color: #1e1e1e;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .item_img {
+    width: 64px;
+    height: 64px;
+    object-fit: fill;
+    border-radius: 10px;
+    margin: 0 16px 0 0;
+    transition: all 0.4s ease-out;
+  }
+  .item img:hover {
+    box-shadow: none;
+  }
+  .item_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .item .subtitle, .item .title {
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
+    font-family: "Inter", sans-serif;
+    white-space: normal;
+  }
+  .item .subtitle {
+    font-size: 10px;
+    font-weight: 600;
+    color: #58667e;
+  }
+  .item .title {
+    font-size: 12px;
+    color: #1e1e1e;
+    width: 165px;
+  }
+  .carousel.move {
+    margin-left: 0%;
+  }
+  .btn_arrow {
+    display: none;
+  }
+  .btn_arrow.left {
+    display: none;
+  }
+  .btn_arrow.right {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .item_block_skeleton {
+    display: flex;
+    flex-direction: column;
+  }
+  .skeleton-text {
+    margin-bottom: 5px;
+  }
+  .skeleton-text.first {
+    width: 40%;
+    margin: 10px 0 8px 0;
+  }
+  .skeleton-text.last {
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=stylesSlider.css.map */

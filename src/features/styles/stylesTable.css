@@ -246,7 +246,7 @@
     margin: 0;
   }
   .table_head_title.sticky {
-    background-color: #FFFFFF;
+    background-color: #FBFCFE;
   }
   .table_head_title {
     font-size: 0.75rem;
@@ -313,7 +313,7 @@
     font-weight: 500;
   }
   .table_tbody_coin.sticky {
-    background-color: #FFFFFF;
+    background-color: #FBFCFE;
     text-align: center;
     position: sticky;
     z-index: 100;

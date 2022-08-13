@@ -1,9 +1,10 @@
 import React from "react";
 import { nanoid } from "@reduxjs/toolkit";
+import arrayLoader from "../../../helpers/arrayLoaders";
 
 export default function LoaderSkeleton(){
 
-  const skeletonArray = [1,2,3,4,5,6,7,8].map(elem => {
+  const skeletonArray = arrayLoader(8).map(elem => {
     return (
       <div className='item loader_skeleton' key={nanoid()}>
         <div className="item_img skeleton"></div>

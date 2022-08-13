@@ -128,7 +128,7 @@ a:link, a:active, a:visited{
 // Skeleton 
 
 .skeleton{
-  animation: skeletonLoading .7s linear infinite alternate;
+  animation: skeletonLoading .5s linear infinite alternate;
 }
 
 .skeleton-text{
@@ -148,6 +148,7 @@ a:link, a:active, a:visited{
   margin-top: .2rem;
   margin-bottom: 0;
 }
+
 
 @keyframes skeletonLoading {
   0% {

@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
+import { nanoid } from "@reduxjs/toolkit";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchCoins, selectAllCoins, getStatus, selectSearchedCoin } from "../../../services/slices/dataCryptoSlice";
 import Coins from "./Coins";
+import CoinSkeletonLoader from "./tbodySections/CoinSkeletonLoader";
+import arrayLoader from "../../../helpers/arrayLoaders";
 
 const TableBody = () => {
 
@@ -25,9 +28,17 @@ const TableBody = () => {
         />
     ));
 
+    const tableSkeletonLoaders = arrayLoader(10).map(coin => (
+        <CoinSkeletonLoader key={nanoid()} />
+    ));
+
     return(
         <tbody>
-            {tableCoins}
+            {
+                status === 'succeeded' ?
+                tableCoins : 
+                tableSkeletonLoaders
+            }
         </tbody>
     );
 }

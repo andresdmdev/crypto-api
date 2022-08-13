@@ -1,0 +1,80 @@
+.skeleton-text-table{
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+
+.skeleton-text-table.first{
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.skeleton-text-table.last{
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+// Table
+
+.table_body_coin_name_skeleton{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100px;
+}
+
+.text_skeleton_right{
+  margin: 0 0 0 auto;
+}
+
+.text_coin_logo_skeleton{
+  width: 24px;
+  height: 24px;
+  border-radius: 15px;
+}
+
+.text_coin_name_skeleton{
+  height: 10px;
+}
+
+.text_coin_symbol_skeleton{
+  height: 10px;
+  margin: 0 auto;
+}
+
+.sparkline_skeleton{
+  margin: 0 0 0 auto;
+  height: 48px;
+}
+
+.text_price_skeleton{
+  height: 10px;
+  margin: 0 0 0 auto;
+}
+
+.text_ratio_skeleton{
+  margin: 0 0 0 auto;
+  height: 10px;
+}
+
+.text_mcap_skeleton{
+  margin: 0 0 0 auto;
+  height: 10px;
+}
+
+.text_vol_skeleton{
+  margin: 0 0 0 auto;
+  height: 10px;
+}
+
+.table_body_coin_volume_skeleton{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.text_sup_skeleton{
+  margin: 0 0 0 auto;
+  height: 10px;
+}

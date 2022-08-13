@@ -121,7 +121,7 @@ a:link, a:active, a:visited {
 }
 
 .skeleton {
-  animation: skeletonLoading 0.7s linear infinite alternate;
+  animation: skeletonLoading 0.5s linear infinite alternate;
 }
 
 .skeleton-text {

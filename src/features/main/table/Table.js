@@ -1,7 +1,7 @@
 import React from "react";
 import TableBody from "./TableBody";
 import '../../styles/stylesTable.css'
-import Status from "./Status";
+import '../../styles/stylesSkeletonTable.css'
 
 export default function Table(){
 
@@ -23,7 +23,6 @@ export default function Table(){
         </thead>
         <TableBody />
       </table>
-      <Status />
     </div>
   )
 }

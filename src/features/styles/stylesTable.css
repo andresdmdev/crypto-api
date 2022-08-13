@@ -109,7 +109,7 @@
 .table_body_coin_volume {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
 }
 
 .coin_volume_ticker {
@@ -148,10 +148,12 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  width: 100%;
 }
 
 .text_coin_logo {
   width: 24px;
+  height: 24px;
 }
 
 .text_coin_name {
@@ -193,6 +195,11 @@
 
 .sparkline {
   width: 140px;
+}
+
+.table_tbody_coin_sparkline {
+  width: 140px;
+  border-radius: 10px;
 }
 
 .loading {

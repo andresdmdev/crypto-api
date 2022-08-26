@@ -15,7 +15,7 @@ export default function CoinRatio({ ratio }){
     <div className="ratio_block">
       <img src={logo} alt="logo" className="ratio_logo" />
       {
-        Number.parseFloat(numberWithOutSimbol).toFixed(2) || 0.1
+        !numberWithOutSimbol ? '0.01' : Number.parseFloat(numberWithOutSimbol).toFixed(2)
       }%
       </div>
     </td>

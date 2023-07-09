@@ -8,7 +8,7 @@ This app shows a list of cryptocurrencies from CoinGecko platform with its actua
     + Node.js and NPM for JavaScript runtime environment and package management.
     + React.js as a Front-End library to build interactive user interfaces. I used state Hooks to store data from the api and handle conection errors.
     + Axios library to handle asynchronous REST API requests using useEffect Hook.
-    + CSS3 for styling and HTML5 for the layout.
+    + SaSS for styles and HTML5 for the layout.
 
 
 ### [DEMO](https://andres-webdev.github.io/crypto-api/)

@@ -11,4 +11,4 @@ This app shows a list of cryptocurrencies from CoinGecko platform with its actua
     + SaSS for styles and HTML5 for the layout.
 
 
-### [DEMO](https://andres-webdev.github.io/crypto-api/)
+### [DEMO](https://andresmfdev.github.io/crypto-api/)

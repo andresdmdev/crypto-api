@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/crypto-api/static/css/main.f76a26cb.css",
-    "main.js": "/crypto-api/static/js/main.84a0fa17.js",
-    "static/media/Logo.svg": "/crypto-api/static/media/Logo.cd2d231030ca9b947764e228883122ee.svg",
+    "main.js": "/crypto-api/static/js/main.d60ff923.js",
+    "static/media/Logo.svg": "/crypto-api/static/media/Logo.cd161b8c602262bda24a889e3bec1622.svg",
     "index.html": "/crypto-api/index.html",
-    "static/media/searchLogo.svg": "/crypto-api/static/media/searchLogo.db83baa5bf65b61601bd57c8b6debf10.svg",
-    "static/media/arrow-left.svg": "/crypto-api/static/media/arrow-left.0d20b62c2acd7c9d67d9c49319f4dc39.svg",
-    "static/media/red.svg": "/crypto-api/static/media/red.fcceb8cf8bf6da23b499815cae9fccea.svg",
-    "static/media/green.svg": "/crypto-api/static/media/green.61edb04a3c39a745fc16af8423aab940.svg",
-    "static/media/arrow-rigth.svg": "/crypto-api/static/media/arrow-rigth.98014418516f1e0714399a6c74874d0e.svg",
+    "static/media/searchLogo.svg": "/crypto-api/static/media/searchLogo.34e8e6309ac0e3a5b4cc34425e93257b.svg",
+    "static/media/arrow-left.svg": "/crypto-api/static/media/arrow-left.1cb0c4e90d9bbcbc467610b3f3878bfb.svg",
+    "static/media/red.svg": "/crypto-api/static/media/red.ae297719275de02f8dc738f96a1a7001.svg",
+    "static/media/green.svg": "/crypto-api/static/media/green.8ec5d6848bb3c95d5fe9e804967f2aaf.svg",
+    "static/media/arrow-rigth.svg": "/crypto-api/static/media/arrow-rigth.3a647cb9b73bfa685dd0aed2ea1f9a8d.svg",
     "main.f76a26cb.css.map": "/crypto-api/static/css/main.f76a26cb.css.map",
-    "main.84a0fa17.js.map": "/crypto-api/static/js/main.84a0fa17.js.map"
+    "main.d60ff923.js.map": "/crypto-api/static/js/main.d60ff923.js.map"
   },
   "entrypoints": [
     "static/css/main.f76a26cb.css",
-    "static/js/main.84a0fa17.js"
+    "static/js/main.d60ff923.js"
   ]
 }
